@@ -1,43 +1,4 @@
-function revClose() {
-    let temper = $('.reviews-content-box');
-    for (let i = 0; i < temper.length; i++) {        temper[i].classList.remove('content-plus');    }
-}
-revClose();
-$('.reviews-content').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    revClose();
-});
-$('.reviews-content-box__cbtn').on('click', function () {
-    this.parentElement.parentElement.classList.toggle("content-plus");
-});
- $('.reviews-content').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    arrows: true,
-    responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
- });
+
 
 
 
@@ -50,4 +11,26 @@ $('.reviews-content-box__cbtn').on('click', function () {
       return false; 
     });
 });
-
+var animForSect2 = {
+	".sing-content-box": "animationarrow"
+};
+addAnimForSection(".sing-content", animForSect2);
+function addAnimForSection(el, arr) {
+	var target = $(el);
+	var targetPos = target.offset().top;
+	var winHeight = $(window).height();
+	var scrollToElem = targetPos - winHeight;
+	$(window).scroll(function(){
+	  var winScrollTop = $(this).scrollTop();
+	  var flag = true;
+	  if(winScrollTop > scrollToElem){
+	  	if (flag){
+		  	for(var i = 0; i <= Object.keys(arr).length; i++){
+		  		var key = Object.keys(arr)[i];
+		  		$(el + " " + key).addClass(arr[key]);
+		  	}
+		  	flag = false;
+	  	}
+	  }
+	});
+}

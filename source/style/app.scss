@@ -283,27 +283,27 @@ b {
 
 ::-webkit-input-placeholder {
 	color: #666666;
-	;
+	
 	font-size: 16px;
 }
 
 ::-moz-placeholder {
 	color: #666666;
-	;
+	
 	font-size: 16px;
 }
 
 /* Firefox 19+ */
 :-moz-placeholder {
 	color: #666666;
-	;
+	
 	font-size: 16px;
 }
 
 /* Firefox 18- */
 :-ms-input-placeholder {
 	color: #666666;
-	;
+	
 	font-size: 16px;
 }
 
@@ -312,7 +312,7 @@ b {
 	font-size: 48px;
 	font-weight: 900;
 	line-height: 48px;
-    text-align: center;
+	text-align: center;
 }
 
 .green {
@@ -322,7 +322,9 @@ b {
 .orange {
 	color: #fd7532;
 }
-
+.red{
+	color: #f33939;
+}
 .nowrap {
 	white-space: nowrap;
 }
@@ -360,6 +362,7 @@ b {
 @import "common/header";
 @import "common/components";
 @import "common/sing";
+@import "common/sequela";
 @import "common/footer.scss";
 
 
@@ -464,4 +467,15 @@ b {
 		-webkit-transform: rotate(720deg);
 		transform: rotate(720deg);
 	}
+}
+@-webkit-keyframes improveWidth {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes improveWidth {
+  from {
+    width: 0;
+  }
 }
