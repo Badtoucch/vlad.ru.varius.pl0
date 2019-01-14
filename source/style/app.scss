@@ -307,6 +307,7 @@ b {
 	font-size: 48px;
 	font-weight: 900;
 	line-height: 48px;
+    text-align: center;
 }
 
 .green {
@@ -323,6 +324,7 @@ b {
 
 
 @import "common/header";
+@import "common/components";
 @import "common/footer.scss";
 
 
