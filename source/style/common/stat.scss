@@ -1,8 +1,8 @@
 .stat {
 	position: relative;
-	top: -22px;
+	margin-top: -22px;
 	z-index: 7;
-
+padding-bottom: 55px;
 	&-content {
 		border-radius: 5px;
 		border: 1px solid #e3d1c1;
@@ -58,7 +58,7 @@
 }
 @media screen and (max-width: 1199px) {
 	.stat{
-		top: -115px;
+		margin-top: -115px;
 		&-content{
 			margin-top: 55px;
 		}
@@ -83,7 +83,7 @@
 
 @media (max-width: 1023px) {
 	.stat{
-		top: 0px;
+		margin-top: 0;
 		.title{
 			br{
 				display: none;

@@ -365,6 +365,7 @@ b {
 @import "common/trouble";
 @import "common/op";
 @import "common/stat";
+@import "common/act";
 @import "common/components";
 @import "common/reviews";
 @import "common/footer.scss";
@@ -481,5 +482,19 @@ b {
 @keyframes improveWidth {
   from {
     width: 0;
+  }
+}
+@keyframes show-hide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveTop {
+  to {
+    top: -21px;
   }
 }

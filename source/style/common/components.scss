@@ -1,5 +1,8 @@
 .components {
-	padding-top: 100px;
+	padding-top: 00px;
+	position: relative;
+	margin-top: -30px;
+	z-index: 8;
 	.title {
 		padding: 0 300px;
 	}
@@ -343,6 +346,7 @@
 
 @media screen and (max-width: 1199px) {
 	.components {
+		margin-top: -130px;
 		.title {
 			padding: 0 200px;
 		}
@@ -456,6 +460,7 @@
 
 @media (max-width: 1023px) {
 	.components {
+		margin-top: 0;
 		.title {
 			padding: 0 90px;
 		}
