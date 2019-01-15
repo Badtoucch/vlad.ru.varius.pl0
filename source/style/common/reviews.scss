@@ -1,0 +1,101 @@
+.reviews {
+	padding-top: 100px;
+	padding-bottom: 90px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 83px;
+	}
+	&__item {
+		text-align: center;
+		max-width: 370px;
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+		border-top: 4px solid #fd7532;
+		position: relative;
+		padding-top: 145px;
+		font-size: 18px;
+	}
+	&__img {
+		height: 154px;
+		width: 154px;
+		position: absolute;
+		left: 50%;
+		top: -38px;
+		transform: translateX(-50%);
+		&::after {
+			content: "";
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    -webkit-transform: translateX(-50%) translateY(-50%);
+		    -ms-transform: translateX(-50%) translateY(-50%);
+		    transform: translateX(-50%) translateY(-50%);
+		    border: 1.5px dashed #e1cebd;
+		    width: 170px;
+		    height: 170px;
+		    border-radius: 50%;
+		    z-index: 1;
+		}
+	}
+	&__img-clip {
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		border-radius: 50%;
+		border: 4px solid #b2c88b;
+		position: relative;
+		img {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			height: auto;
+			max-width: 240px;
+		}
+	}
+	&__head {
+		background-color: #f5f8eb;
+		font-size: 22px;
+		padding: 22px 30px;
+		font-weight: 500;
+	}
+	&__text {
+		line-height: 1.56;
+		padding: 18px 28px;
+	}
+	&__result {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 3px;
+		padding: 0 31px;
+		padding-bottom: 18px;
+		font-weight: 500;
+		line-height: 1.4;
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 15px;
+			height: 2px;
+			background-color: #b2c88b;
+			left: 50%;
+			top: 36.5%;
+			transform: translateX(-50%);
+		}
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 0;
+			width: 0;
+			border: 6px solid rgba(0,0,0,0);
+			border-left: 6px solid #b2c88b;
+			left: 50%;
+			top: 33.6%;
+			transform: translateX(25%);
+		}
+	}
+}
