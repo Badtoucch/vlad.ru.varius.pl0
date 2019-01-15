@@ -510,7 +510,7 @@
 			justify-content: center;
 			align-items: flex-start;
 			&-box{
-				width: 280px;
+				width: 220px;
 				margin: 5px;
 				margin-bottom: 10px;
 				display: flex;
@@ -560,5 +560,10 @@
 		.btn{
 			top: 0px;
 		}
+	}
+}
+@media screen and (max-width: 479px) {
+	.sequela-content-box{
+		width: 280px;
 	}
 }
