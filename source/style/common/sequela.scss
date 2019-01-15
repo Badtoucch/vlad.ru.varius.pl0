@@ -26,7 +26,7 @@
 	&:after {
 		content: "";
 		position: absolute;
-		bottom: 0;
+		bottom: -1px;
 		left: 50%;
 		transform: translateX(-50%);
 		background: url(../img/after.png) center;
@@ -74,6 +74,9 @@
 
 		&-box {
 			width: 24%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 			&:nth-child(2){
 				.sequela-persent{
 					position: relative;

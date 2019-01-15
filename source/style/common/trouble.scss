@@ -3,7 +3,7 @@
 	position: relative;
 	margin-top: -24px;
 	padding-bottom: 70px;
-	z-index: 5;
+	z-index: 6;
 
 	&-content {
 		margin-top: 61px;
@@ -97,8 +97,8 @@
 		text-align: center;
 		margin: 42px auto 0;
 		position: relative;
-		margin-bottom: 90px;
-
+	margin-bottom: 20px;
+	z-index: 10;
 		&:before {
 			content: '';
 			display: block;
@@ -137,7 +137,7 @@
 			height: auto;
     padding: 15px 10px;
     margin-top: 35px;
-    margin-bottom: 85px;
+    margin-bottom: 0px;
 		}
 	}
 }
@@ -163,7 +163,7 @@
     height: auto;
     padding: 15px 5px;
     margin-top: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 0px;
 		font-size: 20px;
 		line-height: normal;
 		}
@@ -198,7 +198,7 @@
     height: auto;
     padding: 15px 10px;
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     font-size: 18px;
     line-height: normal;
 		}
@@ -233,7 +233,7 @@
     height: auto;
     padding: 15px 10px;
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     font-size: 18px;
     line-height: normal;
 		}
