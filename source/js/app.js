@@ -106,3 +106,41 @@ circles.on('appear', function() {
 }).on('circle-animation-progress', function(event, progress) {
 	$(this).find('strong').html(Math.round(27 * progress) + '<i>%</i>');
 });
+
+
+$(document).ready(function(){
+  $('.reviews__list').slick({
+    slidesToShow: 3,
+     infinite: true,
+    variableWidth: true,
+     // adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 639,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+
+
+  $('.reviews__list').find(".slick-slide").height("auto");
+$('.reviews__list').slickSetOption(null, null, true);
+});
