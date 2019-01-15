@@ -1,6 +1,8 @@
 .sing {
 	margin-top: 120px;
-
+	padding-bottom: 60px;
+	position: relative;
+	z-index: 3;
 	&-content {
 		display: flex;
 
@@ -127,6 +129,7 @@
 		align-items: center;
 		margin: 42px auto 0;
 		position: relative;
+		z-index: 1;
 		&:before{
 			content: '';
     display: block;
@@ -188,6 +191,11 @@
 					}
 	
 					&:after {
+						display: none;
+					}
+				}
+				&:nth-child(3){
+					&:before {
 						display: none;
 					}
 				}

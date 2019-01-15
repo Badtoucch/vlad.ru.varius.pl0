@@ -1,0 +1,246 @@
+.trouble {
+	padding-top: 0px;
+	position: relative;
+	margin-top: -24px;
+	padding-bottom: 70px;
+	z-index: 5;
+
+	&-content {
+		margin-top: 61px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&-box {
+		width: 32%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__img {
+			position: relative;
+
+			&:before {
+				content: "1";
+				position: absolute;
+				top: -21px;
+				left: 50%;
+				width: 42px;
+				height: 42px;
+				color: rgb(255, 255, 255);
+				font-size: 26px;
+				font-weight: 700;
+				line-height: 1;
+				display: flex;
+				transform: translateX(-50%);
+				justify-content: center;
+
+				align-items: center;
+				z-index: 2;
+				background: linear-gradient(to left, rgb(252, 127, 65) 0%, rgb(251, 144, 92) 49%, rgb(252, 127, 65) 100%);
+				border-radius: 50%;
+				border-width: 4px;
+				border-style: solid;
+				border-color: rgb(254, 192, 162);
+				border-image: initial;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&__name {
+			text-align: center;
+			color: #222222;
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 1;
+			margin-top: 20px;
+		}
+
+		&__sub {
+			color: #444444;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 26px;
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		.two {
+			&:before {
+				content: "2";
+			}
+		}
+
+		.three {
+			&:before {
+				content: "3";
+			}
+		}
+	}
+
+	&-attention {
+		color: #000000;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 28px;
+		width: 970px;
+		height: 80px;
+		border: 3px solid #fc7f42;
+		background-color: #ffffff;
+		border-radius: 6px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 42px auto 0;
+		position: relative;
+		margin-bottom: 90px;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 17px;
+			height: 17px;
+			background-color: #fff;
+			border: 3.2px solid #fc7f42;
+			border-left: none;
+			border-top: none;
+			-webkit-transform: translateX(-50%) scaleY(0.7) rotate(-136deg);
+			-ms-transform: translateX(-50%) scaleY(0.7) rotate(-136deg);
+			transform: translateX(-50%) scaleY(0.7) rotate(-136deg);
+			top: -12px;
+			left: 50%;
+		}
+	}
+}
+@media (max-width: 1199px) {
+	.trouble{
+		margin-top: -110px;
+		&-content{
+			margin-top: 50px;
+		}
+		&-box{
+			&__name{
+				font-size: 21px;
+			margin-top: 15px;
+			}
+			&__sub{
+				font-size: 17px;
+				line-height: normal;
+			}
+		}
+		&-attention{
+			height: auto;
+    padding: 15px 10px;
+    margin-top: 35px;
+    margin-bottom: 85px;
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.trouble{
+		margin-top: 0px;
+		&-content{
+			margin-top: 40px;
+		}
+		&-box{
+			&__name{
+				font-size: 20px;
+			margin-top: 10px;
+			}
+			&__sub{
+				font-size: 16px;
+				margin-top: 5px;
+			}
+		}
+		&-attention{
+			width: 100%;
+    height: auto;
+    padding: 15px 5px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+		font-size: 20px;
+		line-height: normal;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.trouble{
+	
+		&-content{
+			margin-top: 20px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&-box{
+			 width: 250px;
+			 margin: 20px 6px;
+			&__name{
+				font-size: 20px;
+			margin-top: 10px;
+			}
+			&__sub{
+				font-size: 16px;
+				margin-top: 5px;
+				br{
+					display: none;
+				}
+			}
+		}
+		&-attention{
+			width: 100%;
+    height: auto;
+    padding: 15px 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: normal;
+		}
+	}
+}
+
+@media (max-width: 639px) {
+	.trouble{
+	
+		&-content{
+			margin-top: 20px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&-box{
+			 width: 220px;
+			 margin: 20px 5px;
+			&__name{
+				font-size: 20px;
+			margin-top: 10px;
+			}
+			&__sub{
+				font-size: 16px;
+				margin-top: 5px;
+				br{
+					display: none;
+				}
+			}
+		}
+		&-attention{
+			width: 100%;
+    height: auto;
+    padding: 15px 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: normal;
+		}
+	}
+}
+@media (max-width: 479px) {
+	.trouble-box{
+		width: 280px;
+	}
+}
