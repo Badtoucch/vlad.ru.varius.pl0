@@ -319,9 +319,12 @@
 					font-size: 28px;
 					letter-spacing: -1.4px;
 					font-size: 28px;
-					.x_price_previous{
+
+					.x_price_previous {
 						position: relative;
-						&:before, &:after{
+
+						&:before,
+						&:after {
 							content: '';
 							position: absolute;
 							left: 50%;
@@ -331,10 +334,12 @@
 							background-color: #f01d07;
 							transform: translateX(-50%) translateY(-50%) rotate(20deg);
 						}
-						&:after{
+
+						&:after {
 							transform: translateX(-50%) translateY(-50%) rotate(-20deg);
 						}
 					}
+
 					.x_currency {
 						font-size: 16px;
 						letter-spacing: normal;
@@ -357,7 +362,7 @@
 					font-weight: 900;
 					letter-spacing: -2px;
 					color: #fd7532;
-				
+
 					.x_currency {
 						font-size: 16px;
 						letter-spacing: normal;
@@ -443,6 +448,8 @@
 	}
 }
 
+
+
 @media screen and (max-width: 1199px) {
 	.header {
 		&:after {
@@ -523,13 +530,14 @@
 		}
 
 	}
+
 }
 
 @media (max-width: 1023px) {
 	.header {
 		background: url(../img/bg-2.jpg) center no-repeat;
 		padding-bottom: 40px;
-
+		padding-top: 65px;
 		.logo {
 			display: none;
 		}
@@ -548,7 +556,7 @@
 		&-nav {
 			width: 640px;
 			margin-right: auto;
-
+			display: none;
 			&__list {
 				padding-top: 25px;
 
@@ -562,7 +570,8 @@
 		&-title {
 			text-align: center;
 			font-size: 65px;
-			margin-top: 28px;
+			padding-top: 0;
+			margin-top: 0;
 		}
 
 		&-subtitle {
@@ -665,7 +674,7 @@
 
 		&-title {
 			font-size: 50px;
-			margin-top: 20px;
+			margin-top: 0px;
 		}
 
 		&-subtitle {
@@ -738,16 +747,18 @@
 		padding-bottom: 25px;
 
 		&-nav {
-			
+
 			margin-right: auto;
-		
+
 			justify-content: center;
 			flex-wrap: wrap;
+
 			&__list {
 				padding-top: 25px;
 				width: 155px;
 				margin-left: 50px;
 				margin-right: 5px;
+
 				&:nth-child(2):after,
 				&:nth-child(3):after {
 					display: none;
@@ -757,7 +768,7 @@
 
 		&-title {
 			font-size: 40px;
-			margin-top: 20px;
+			margin-top: 0px;
 			line-height: normal;
 		}
 
@@ -787,7 +798,7 @@
 
 			&__list {
 				display: flex;
-		
+
 				align-items: center;
 				font-size: 17px;
 				height: 30px;
@@ -795,7 +806,9 @@
 				padding-left: 55px;
 				line-height: normal;
 
-				br {display: none;}
+				br {
+					display: none;
+				}
 			}
 
 			.hel3 {
@@ -831,17 +844,21 @@
 		.form {}
 	}
 }
+
 @media (max-width: 400px) {
-	.header-title{
+	.header-title {
 		font-size: 34px;
 	}
-	.header-subtitle{
+
+	.header-subtitle {
 		font-size: 18px;
 	}
-	.header-edge__list{
+
+	.header-edge__list {
 		font-size: 16px;
 	}
-	.header-nav__list{
+
+	.header-nav__list {
 		padding-top: 15px;
 	}
 }

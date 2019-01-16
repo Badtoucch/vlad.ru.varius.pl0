@@ -360,6 +360,7 @@ b {
 
 
 @import "common/header";
+@import "common/nav.scss";
 @import "common/sing";
 @import "common/sequela";
 @import "common/trouble";
@@ -497,4 +498,8 @@ b {
   to {
     top: -21px;
   }
+}
+@keyframes fixshow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
