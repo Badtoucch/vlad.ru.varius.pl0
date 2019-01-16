@@ -7,7 +7,7 @@ function postDate(t){t=t||"dd.mm.yyyy";var m,e=new Date;m=["Января","Фе�
     $('a').click( function(){ 
   var scroll_el = $(this).attr('href'); 
         if ($(scroll_el).length != 0) { 
-      $('html, body').animate({ scrollTop: $(scroll_el).offset().top + 50 }, 1000); 
+      $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 100 }, 1000); 
         }
       return false; 
     });
