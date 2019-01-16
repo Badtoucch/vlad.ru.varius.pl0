@@ -80,6 +80,12 @@
 		padding: 18px 28px;
 		padding-bottom: 22px;
 	}
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	  .reviews__result {
+	    padding: 0;
+	    margin-bottom: 15px;
+	  }
+	}
 	&__result {
 		display: flex;
 		justify-content: space-between;
@@ -285,3 +291,4 @@
 		}
 	}
 }
+
