@@ -786,3 +786,76 @@
 		}
 	}
 }
+
+
+.components__item {
+	b::before {
+		animation-name: components-before;
+		animation-duration: 2s;
+		animation-iteration: 1;
+	}
+	&:nth-of-type(2) b::after,
+	&:nth-of-type(3) b::after,
+	&:nth-of-type(6) b::after,
+	&:nth-of-type(7) b::after {
+		animation-name: components-lines-img;
+		animation-duration: 2s;
+		animation-iteration: 1;
+	}
+	&:nth-of-type(1) b::after {
+		animation-name: components-lines-vert-top;
+		animation-duration: 2s;
+		animation-iteration: 1;
+	}
+	&:last-of-type b::after {
+		animation-name: components-lines-vert-bottom;
+		animation-duration: 2s;
+		animation-iteration: 1;
+	}
+	&:nth-of-type(4) b::after {
+		animation-name: components-lines-hor-left;
+		animation-duration: 2s;
+		animation-iteration: 1;
+	}
+	&:nth-of-type(5) b::after {
+		animation-name: components-lines-hor-right;
+		animation-duration: 2s;
+		animation-iteration: 1;
+	}
+} 
+
+@keyframes components-lines-img {
+	0% {
+		width: 0px;
+	}
+	
+}
+@keyframes components-lines-vert-top {
+	0% {
+		height: 0;
+		bottom: -35px;
+	}
+}
+@keyframes components-lines-vert-bottom {
+	0% {
+		height: 0;
+		top: -35px;
+	}
+}
+@keyframes components-lines-hor-left {
+	0% {
+		width: 0px;
+		right: -136px;
+	}
+}
+@keyframes components-lines-hor-right {
+	0% {
+		width: 0px;
+		left: -136px;
+	}
+}
+@keyframes components-before {
+	0% {
+		opacity: 0;
+	}
+}
