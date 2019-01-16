@@ -1,6 +1,9 @@
 .reviews {
-	padding-top: 100px;
-	padding-bottom: 90px;
+	padding-top: 0px;
+	padding-bottom: 78px;
+	position: relative;
+	z-index: 1;
+	margin-top: -26px;
 	&__list {
 		// display: flex;
 		// justify-content: space-between;
@@ -22,6 +25,8 @@
 		font-size: 18px;
 		display: flex!important;
 		flex-direction: column;
+		position: relative;
+		z-index: 10;
 	}
 	&__item:nth-of-type(2) {
 		margin: 0 26px;
@@ -121,6 +126,11 @@
 
 @media screen and (max-width: 1199px) {
 	.reviews {
+		margin-top: -90px;
+		&.block {
+			padding-top: 0px;
+			padding-bottom: 30px;
+		}
 		&__list {
 			margin-top: 25px;
 		}
@@ -163,8 +173,12 @@
 
 @media (max-width: 1023px) {
 	.reviews {
+		margin-top: 0;
+		&.block {
+			padding: 40px 0;
+		}
 		.slick-list {
-			width: 680px;
+			width: 670px;
 			margin-left: auto;
 			margin-right: auto;
 			padding-top: 50px;
@@ -188,6 +202,9 @@
 
 @media (max-width: 767px) {
 	.reviews {
+		&.block {
+			padding: 30px 0;
+		}
 		.slick-list {
 			width: 528px;
 			
@@ -220,6 +237,9 @@
 
 @media screen and (max-width: 639px) {
 	.reviews {
+		&.block {
+			padding: 25px 0;
+		}
 		.slick-list {
 			width: 266px;
 // overflow-y: visible;
