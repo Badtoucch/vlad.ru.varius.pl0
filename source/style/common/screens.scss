@@ -95,7 +95,7 @@
 			padding: 25px 0;
 		}
 		.slick-list {
-			width: 282px;
+			width: 291px;
 		}
 		&__img {
 			width: 270px;
@@ -147,4 +147,13 @@
 }
 .slick-next {
 	right: -2px;	
+}
+
+@media screen and (max-width: 350px) {
+	.slick-prev {
+		left: -5px;	
+	}
+	.slick-next {
+		right: -5px;	
+	}
 }
