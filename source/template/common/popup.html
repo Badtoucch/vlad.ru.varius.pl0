@@ -1,46 +1,44 @@
 <div class="ever-popup-build">
 		<div class="my-popup" id="cloneThis">
 			<div class="popup">
+				<img src="img/logo.png" alt="Varius" class="logo">
 				<div class="popup__prod">
-					<img src="./img/pack.png" alt="">
+					<img src="./img/pack.png" alt="" class="popup__pack">
+					<img src="img/branch.png" alt="branch" class="popup__branch">
+					<img src="img/branch-2.png" alt="branch" class="popup__branch-2">
 				</div>
 				<div class="popup__form">
 					<div class="form">
-					<div class="form-title">Закажите сейчас <br><span class="orange">по Акции</span></div>
-					<div class="price">
-						<div class="price-old">
-							<div class="price-old__title">Старая цена</div>
-							<div class="price-old__count">
-								<span class="x_price_previous">1999</span><span class="x_currency">руб</span><span class="star">.</span>
+				<div class="form-bg">
+						<div class="form-title">Успейте заказать<br> со скидкой<br> <span class="orange">до <span class="date-0">16.01.2019</span></span></div>
+						<div class="price">
+							<div class="price-old">
+								<div class="price-old__title">Старая цена</div>
+								<div class="price-old__count">
+									<span class="x_price_previous">1999</span><span class="x_currency">руб</span><span class="star">.</span>
+								</div>
+							</div>
+							<div class="price-new">
+								<div class="price-new__title">Новая цена</div>
+								<div class="price-new__count">
+									<span class="x_price_current">990</span><span class="x_currency">руб</span><span class="star">*</span>
+								</div>
 							</div>
 						</div>
-						<div class="price-new">
-							<div class="price-new__title">Ваша цена</div>
-							<div class="price-new__count">
-								<span class="x_price_current">990</span><span class="x_currency">руб</span><span class="star">*</span>
-							</div>
-						</div>
-					</div>
-					<div class="form-line"></div>
-					<div class="form-timer__title">Осталось до конца<br>
-						акции</div>
-					<div class="form-timer">
-						<div class="form-timer__hours">
-							<span class="hours">0</span>
-							<span class="hours">0</span>
-						</div>
-						<div class="form-timer__minutes">
-							<span class="minutes">1</span>
-							<span class="minutes">7</span>
-						</div>
-						<div class="form-timer__seconds">
-							<span class="seconds">1</span>
-							<span class="seconds">8</span>
-						</div>
-					</div>
-					<div class="btn ever-popup-btn">Заказать</div>
-					<div class="info-price">* при заказе курса</div>
+						<div class="form-packCount">Осталось упаковок<br>
+							со скидкой: <span class="lastpack">15</span></div>
 				</div>
+				<form action="submit" method="post" class="x_order_form form__cont">
+					<div class="form__input-name"><input type="text" name="name" placeholder="Моё имя" required="" autocomplete="name" class="form__input"></div>
+					<div class="form__input-phone"><input type="tel" name="phone" placeholder="Мой телефон" required="" autocomplete="tel" class="form__input"></div>
+					<button type="/sybmit" class="form__btn">Заказать <span class="form__btn_size">со
+							скидкой<span></span></span></button>
+				</form>
+				<div class="info-price">
+						* при заказе курса
+				</div>
+				<p class="form__bottom">Оплата после получения</p>
+			</div>
 				</div>
 			</div>
 		</div>

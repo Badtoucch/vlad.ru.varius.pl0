@@ -1,8 +1,81 @@
+.ever-popup {
+	z-index: 10000!important;
+}
+.ever-popup__close:after, .ever-popup__close:before {
+	height: 1px!important;
+}
 .popup {
 	display: flex;
 	background-color: #fff;
 	border-radius: 10px;
-	.form {
+	padding: 10px;
+	padding-left: 100px;
+	align-items: flex-end;
+	background: url(../img/bg-1.jpg) no-repeat top, linear-gradient(to left, #d3dfee 0%, #ffffff 52%, #edd3e4 100%);
+    background-position: -390px 0px;
+    background-size: auto 600px;
+    position: relative;
+	.logo {
+		position: absolute;
+		top: 30px;
+		left: calc(50% - 205px);
+	}
+	&__prod {
+		position: relative;
+		top: 10px;
+	}
+	&__branch {
+		position: absolute;
+		left: -92px;
+    	top: 35px;
+    	height: auto;
+	}
+	&__branch-2 {
+		position: absolute;
+		left: -60px;
+    	bottom: 81px;
+    	height: auto;
+	}
+	&__pack {
+		position: relative;
+		z-index: 5;
+		height: auto;
+		width: 500px;
+	}
+}
+
+@media (max-width: 960px) {
+	.popup {
+		.form::after {
+			display: none;
+		}
+	}
+}
+@media (max-width: 910px) {
+	.popup {
+		display: block;
+		padding: 20px 10px;
+		.logo {
+			display: none;
+		}
+		.form {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&__prod {
+			position: static;
+
+		}
+		&__pack {
+			width: 300px;
+			position: static;
+		}
+		&__branch,
+		&__branch-2 {
+			display: none;
+		}
 		
+
+
 	}
 }
