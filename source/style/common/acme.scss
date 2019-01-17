@@ -36,7 +36,7 @@
 		position: absolute;
 		left: 50%;
 		transform: translateX(-109.5%);
-		bottom: 0;
+		bottom: -8px;
 		z-index: 3;
 	}
 
@@ -253,4 +253,12 @@
 		width: 230px;
 	}
 	}
+}
+@media (max-width: 400px){
+.acme-subtitle {
+    font-size: 18px;
+}
+.acme-title {
+	font-size: 34px;
+}
 }

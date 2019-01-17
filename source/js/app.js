@@ -129,6 +129,7 @@ $("#toggle-mnu").on('click', function(e) {
 	e.preventDefault();
 	$(this).toggleClass("on");
 	$(this).parent().toggleClass('navbar-hide');
+	$(".logo-gamburger").toggleClass("del-logo");
 });
 
 $(document).ready(function(){

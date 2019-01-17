@@ -1,9 +1,9 @@
 .certificates {
-	min-height: 935px;
+	min-height: 915px;
 	padding-top: 116px;
 	padding-bottom: 115px;
 	background: url(../img/bg-2.jpg) no-repeat top, linear-gradient(to left, #d3dfee 0%, #ffffff 52%, #edd3e4 100%);
-	background-position: 50% -101px;
+	background-position: 50% 0;
 	position: relative;
 	&::before {
 		content: "";
@@ -31,6 +31,7 @@
 		max-width: 280px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 20px;
 		border: none;
 		border-bottom: 6px solid #e46324;
 	}
