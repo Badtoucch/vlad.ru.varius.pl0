@@ -4,7 +4,9 @@
 	position: relative;
 	padding-bottom: 0px;
 	z-index: 1;
-
+	.form:after{
+		display: none;
+	}
 	&:after {
 		content: "";
 		position: absolute;
@@ -136,7 +138,7 @@
 	&-boxs {
 		display: flex;
 		justify-content: flex-end;
-		margin-top: 40px;
+		margin-top: 27px;
 		padding-bottom: 114px;
 
 		&__pack {
