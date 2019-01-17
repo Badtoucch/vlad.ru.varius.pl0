@@ -43,7 +43,7 @@
 	&-content {
 		display: flex;
 		justify-content: flex-end;
-		padding-bottom: 96px;
+		padding-bottom: 110px;
 	}
 
 	&-edge {
@@ -71,6 +71,15 @@
 
 	.hel3 {
 		margin-top: 36px;
+	}
+	.header-pack{
+		bottom: -222px;
+	}
+	.header-branch2{
+		bottom: -138px;
+	}
+	.header-branch{
+		bottom: -103px;
 	}
 }
 
@@ -121,6 +130,15 @@
 		.hel3 {
 			margin-top: 30px;
 	}
+	.header-branch {
+    bottom: -50px;
+}
+ .header-pack {
+	bottom: -162px;
+}
+.header-branch2 {
+	bottom: -90px;
+}
 	}
 }
 @media (max-width: 1023px) {
