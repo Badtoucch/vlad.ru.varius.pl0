@@ -170,6 +170,8 @@
 @media screen and (max-width: 1199px) {
 	.delivery {
 		margin-top: -90px;
+		position: relative;
+		z-index: 10;
 		&.block {
 			padding-top: 0;
 		}
