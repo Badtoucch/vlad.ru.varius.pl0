@@ -550,7 +550,10 @@
 			&__row{
 				
 				width: 280px;
-				margin-bottom: 20px;
+				margin-bottom: 30px;
+				&:last-child{
+					margin-bottom: 20px;
+				}
 			}
 		}
 		&-attention{

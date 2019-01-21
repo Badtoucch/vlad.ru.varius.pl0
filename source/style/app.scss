@@ -341,8 +341,12 @@ b {
 	height: 60px;
 	border-radius: 5px;
 	background-color: #ffffff;
-	background-image: linear-gradient(to right, #fd7532 0%, #fb905c 51%, #fd7532 100%);
+	background-image: linear-gradient(to right, #fd7532 0%, #fb905c 26%, #fd7532 50%, #fd6232 51%, #fc8d56 75%, #fd6232 100%);
 	box-shadow: 0px 26px 29px -24px #e46324;
+	background-size: 200% auto ;
+	
+	background-position: 0 0;
+  transition: background-position 0.5s;
 	color: #ffffff;
 	font-size: 30px;
 	font-weight: 700;
@@ -353,9 +357,8 @@ b {
 	width: 100%;
 	border-bottom: 6px solid #e46324;
 	cursor: pointer;
-
 	&:hover {
-		background-image: linear-gradient(to right, #fd6232 0%, #fc8d56 51%, #fd6232 100%);
+		background-position: 100% 0;
 	}
 }
 
@@ -583,6 +586,7 @@ b {
 		color: #fff;
 		border-bottom: 5px solid #e46324;
 		box-shadow: 0px 25px 23px -24px #e46324;
+		transition: all 0.5s;
 		&:hover{
 			box-shadow: none;
 		}

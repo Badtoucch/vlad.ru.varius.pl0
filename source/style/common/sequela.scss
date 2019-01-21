@@ -168,7 +168,9 @@
 				text-align: center;
 				transform: translateY(-50%);
 			}
-
+			i{
+				font-style: normal;
+			}
 
 		}
 	}
@@ -569,6 +571,7 @@
 @media screen and (max-width: 479px) {
 	.sequela-content-box{
 		width: 280px;
+		margin-bottom: 15px;
 	}
 	.sequela-persent-count canvas {
     width: 165px !important;

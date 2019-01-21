@@ -57,9 +57,13 @@
 .header-nav__btn {
 	width: 180px;
 	height: 50px;
+	text-align: center;
 	border-radius: 5px;
 	border: 2px solid #fd7532;
-	background-color: #ffffff;
+	background-image: linear-gradient(to right, #fff 0%, #fff 50%, #fd7532 50%, #fb905c 75%, #fd7532 100%);
+	background-size: 200% auto ;
+	transition: all 0.3s;
+	background-position: 0 0;
 	color: #000000;
 	font-size: 22px;
 	font-weight: 500;
@@ -72,9 +76,9 @@
 	cursor: pointer;
 
 	&:hover {
-		background-image: linear-gradient(to right, #fd7532 0%, #fb905c 51%, #fd7532 100%);
+		background-position: 100% 0;
 		color: #ffffff;
-
+		
 	}
 }
 .fixLogo {
@@ -82,7 +86,12 @@
 	left: 0;
 	top: -25px;
 }
-
+.logo-wrap{
+	font-size: 36px;
+	position: relative;
+	margin-left: -12px;
+	font-weight: bold;
+}
 // end fix menu
 
 //mobmenu
@@ -91,8 +100,10 @@
 	box-shadow: 0 0 40px rgba(0,0,0,0.1);
 	position: fixed;
     width: 100%;
-    height:auto;
-    overflow: hidden;
+		height:100%;
+		max-height: 250px;
+		overflow: hidden;
+		overflow-y: scroll;
     left: 0;
 		top: 0;
 		border-radius: 1px;
@@ -101,10 +112,22 @@
     -webkit-transition: all .5s linear;
     -o-transition: all .5s linear;
 		transition: all .5s linear;
+		.menu__list{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.header-nav__list:nth-child(3):after{
+			display: none;
+		}
+		.header-nav__list:nth-child(2):after{
+			display: none;
+		}
 		.header-nav__list{
-			width: auto;
+			width: 180px;
 			border-bottom: 1px solid #222;
 			padding-top: 45px;
+			margin-right: 20px;
 		}
 		.header-nav__list:hover{
 			border-top: 5px solid transparent;
@@ -115,15 +138,14 @@
 		}
 }
 .moblogo{
-	display: block;
-	margin: 0 auto;
+
 }
 
 .mob-line{
 	width: 100%;
 	height: 1px;
 	background-color: #e4e4e4;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 .navbar__wrap {
 	
@@ -131,7 +153,7 @@
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
-  padding: 10px 20px 20px;
+  padding: 5px 20px 20px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -147,7 +169,7 @@
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  height: 100%;
+
 }
 .toggle-mnu {
   display: block;
@@ -232,13 +254,19 @@
 	justify-content: flex-start;
 	align-items: center;
 	height: 100%;
+	transition: all .5s linear;
 }
 .del-logo{
 	display: none;
+	height: 0;
 }
 .navbar__logo{
 	position: relative;
 	z-index: 5;
+	width: 80px;
+	img{
+		width: 100%;
+	}
 }
 
 
@@ -282,4 +310,14 @@
 		width: 100%;
 		background-color: #fff5dd;
 }
+}
+@media (max-width: 771px){
+	.mob-navbar{
+	max-height: 315px;
+}
+}
+@media screen and (max-width: 539px) {
+	.mob-navbar{
+		max-height: 384px;
+	}
 }

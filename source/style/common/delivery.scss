@@ -331,6 +331,14 @@
 		}
 	}
 }
+@media screen and (max-width: 639px){
+.delivery__item {
+    width: 230px;
+    margin-top: 35px;
+}
+.delivery__text {
+	margin-top: 15px;}
+}
 @media screen and (max-width: 420px) {
 	.delivery {
 		.title br {

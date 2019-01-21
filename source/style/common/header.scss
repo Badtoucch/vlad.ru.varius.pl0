@@ -10,12 +10,12 @@
 	&:after {
 		content: "";
 		position: absolute;
-		bottom: -94px;
+		bottom: -87px;
 		left: 50%;
 		transform: translateX(-50%);
 		background: url(../img/top-after.png) center;
 		width: 100%;
-		height: 143px;
+		height: 166px;
 		z-index: 2;
 	}
 
@@ -33,7 +33,7 @@
 		position: absolute;
 		left: 50%;
 		transform: translateX(-109.5%);
-		bottom: 0;
+		bottom: 14px;
 		z-index: 3;
 	}
 
@@ -138,7 +138,7 @@
 	&-boxs {
 		display: flex;
 		justify-content: flex-end;
-		margin-top: 27px;
+		margin-top: 41px;
 		padding-bottom: 130px;
 
 		&__pack {
@@ -150,7 +150,7 @@
 
 	&-branch {
 		position: absolute;
-		bottom: -96px;
+		bottom: -111px;
 		right: 214px;
 		z-index: 4;
 	}
@@ -158,13 +158,13 @@
 	&-branch2 {
 		position: absolute;
 		z-index: 5;
-		bottom: -119px;
+		bottom: -134px;
 		right: 191px;
 	}
 
 	&-pack {
 		position: absolute;
-		bottom: -202px;
+		bottom: -210px;
 		right: -164px;
 		width: 556px;
 		height: 393px;
@@ -174,7 +174,7 @@
 	&-edge {
 		width: 290px;
 		margin-right: 74px;
-		padding-top: 30px;
+		padding-top: 35px;
 		position: relative;
 
 		&:before {
@@ -597,7 +597,7 @@
 		&-edge {
 			width: 42%;
 			flex-direction: column;
-
+			padding-top: 0;
 			&:before {
 				left: 50%;
 				transform: translate(-50%);
@@ -608,7 +608,7 @@
 			order: 1;
 			display: flex;
 			justify-content: center;
-			padding-top: 20px;
+			padding-top: 0px;
 
 			&__list {
 				font-size: 17px;
@@ -648,6 +648,9 @@
 		&-pack {}
 
 		.form {}
+	}
+	.header-edge:before{
+		display: none;
 	}
 }
 
@@ -754,7 +757,23 @@
 		.form {}
 	}
 }
-
+@media (max-width: 479px) {
+	.header-edge__list:before{
+		width: 30px;
+		height: 30px;
+		border: 3px solid #fec0a2;
+		background-size:67%;
+	}
+	.header-edge__list{
+		padding-left: 45px;
+		margin-bottom: 15px;
+	}
+	.header-edge{
+		width: 295px;
+		padding-top: 0;
+		margin-bottom: 5px;
+	}
+}
 @media (max-width: 400px) {
 	.header-title {
 		font-size: 34px;
